@@ -2,6 +2,7 @@ package Chapter2;
 
 /**
  * Created by Knigh on 2016/11/22.
+ * -Xss128k
  */
 public class JavaVMStackSOF {
     private int stackLength = 1;
