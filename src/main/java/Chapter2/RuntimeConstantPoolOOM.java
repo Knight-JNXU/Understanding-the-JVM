@@ -5,10 +5,11 @@ import java.util.List;
 
 /**
  * Created by Knight_JXNU on 2016/11/28.
- * -XX:PermSize=2M -XX:MaxPermSize=2M
+ * -XX:PermSize=4M -XX:MaxPermSize=4M
  * -XX:PermSize=10M 设置jvm初始分配的非堆（方法区）大小
  * -XX:MaxPermSize=10M 设置jvm最大允许分配的非堆内存
  * String是存在运行时常量池中的，如果创建过多的String就会导致方法区和运行时常量池溢出
+ * 注意：使用jdk1.7（根jdk“去永久代”有关）不出抛出异常，使用jdk1.6可以
  */
 public class RuntimeConstantPoolOOM {
     public static void main(String[] args){
