@@ -6,7 +6,7 @@ package Chapter3;
  */
 public class ReferenceCountingGC {
     public Object instance = null;
-    private static final int _1MB = 1027*1024;
+    private static final int _1MB = 1024*1024;
     //使用bigSize占用内存，以便能在GC日志中看清楚是否被回收过
     private byte[] bigSize = new byte[2*_1MB];
 
